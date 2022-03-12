@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: info-server
+  name: info-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: info-server
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: info-server
+    spec:
+      containers:
+      - image: katilp/cms-info-server:v1.0.1
+        name: cms-info-server
+        resources: {}
+status: {}

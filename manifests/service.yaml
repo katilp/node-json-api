@@ -7,9 +7,9 @@ metadata:
   name: info-server
 spec:
   ports:
-  - port: 3000
+  - port: 8080
     protocol: TCP
-    targetPort: 3000
+    targetPort: 8080
   selector:
     app: info-server
   type: LoadBalancer

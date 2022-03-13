@@ -18,7 +18,7 @@ spec:
         app: info-server
     spec:
       containers:
-      - image: katilp/cms-info-server:v1.0.1
+      - image: katilp/cms-info-server:v1.0.2
         name: cms-info-server
         resources: {}
 status: {}

@@ -4,7 +4,7 @@ on:
 env:
   GKE_CLUSTER: dwk-cluster
   GKE_ZONE: europe-west6-a
-  ACTIONS_ALLOW_UNSECURE_COMMANDS: true  
+  # ACTIONS_ALLOW_UNSECURE_COMMANDS: true  
 jobs:
   setup-deploy:
     name: Setup and Deploy
@@ -15,17 +15,18 @@ jobs:
       uses: actions/checkout@v2
         
     - name: Setup gcloud
-      uses: google-github-actions/setup-gcloud@v0
-        with:
-          service_account_key: ${{ secrets.GKE_SA_KEY }}
-          project_id: ${{ secrets.GKE_PROJECT }}
+      uses: google-github-actions/setup-gcloud@master
+      with:
+        service_account_key: ${{ secrets.GKE_SA_KEY }}
+        project_id: ${{ secrets.GKE_PROJECT }}
+        export_default_credentials: true
     
     - run: |-
         echo $GKE_CLUSTER
         echo $GKE_ZONE
         gcloud auth list
-    #     gcloud container clusters get-credentials $GKE_CLUSTER --zone $GKE_ZONE
+        gcloud container clusters get-credentials $GKE_CLUSTER --zone $GKE_ZONE
         
-    # - name: Deploy
-    #   run: |-        
-    #     kubectl apply -k .
+    - name: Deploy
+      run: |-        
+        kubectl apply -k .

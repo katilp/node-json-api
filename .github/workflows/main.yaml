@@ -1,6 +1,6 @@
 name: Apps deploy
 on:
-  push:
+  workflow_dispatch
 env:
   GKE_CLUSTER: dwk-cluster
   GKE_ZONE: europe-west6-a
@@ -16,9 +16,9 @@ jobs:
         
     - name: Setup gcloud
       uses: google-github-actions/setup-gcloud@v0
-       with:
-         service_account_key: ${{ secrets.GKE_SA_KEY }}
-         project_id: ${{ secrets.GKE_PROJECT }}
+        with:
+          service_account_key: ${{ secrets.GKE_SA_KEY }}
+          project_id: ${{ secrets.GKE_PROJECT }}
     
     - run: |-
         echo $GKE_CLUSTER

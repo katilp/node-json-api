@@ -17,7 +17,7 @@ cd node-json-api
 
 ### Local testing
 
-If `npm` and `nodejs` already [installed](https://nodejs.org/en/download/), install the required modules and run the start script (defined in package.json) with:
+If `npm` and `nodejs` already [available](https://nodejs.org/en/download/), install the required modules and run the start script (defined in package.json) with:
 
 ```
 npm install

@@ -18,7 +18,9 @@
     ],
     "cmssw" : "CMSSW_4_2_8",
     "gt_data" : "FT_R_42_V10A::All",
-    "gt_mc" : "START42_V17B::All"
+    "gt_mc" : "START42_V17B::All",
+    "image_gitlab": "gitlab-registry.cern.ch/cms-cloud/cmssw-docker-opendata/cmssw_4_2_8-slc5_amd64_gcc434",
+    "image_dockerhub": "cmsopendata/cmssw_4_2_8-slc5_amd64_gcc434"
   },
   "2011": {
     "year": 2011,
@@ -39,7 +41,9 @@
     ],
     "cmssw" : "CMSSW_5_3_32",
     "gt_data" : "FT53_V21A_AN6",
-    "gt_mc" : "START53_V27::All"
+    "gt_mc" : "START53_V27::All",
+    "image_gitlab": "gitlab-registry.cern.ch/cms-cloud/cmssw-docker-opendata/cmssw_5_3_32-slc6_amd64_gcc472",
+    "image_dockerhub": "cmsopendata/cmssw_5_3_32-slc6_amd64_gcc472"
   },
   "2012": {
     "year": 2012,
@@ -60,7 +64,9 @@
     ],
     "cmssw" : "CMSSW_5_3_32",
     "gt_data" : "FT53_V21A_AN6",
-    "gt_mc" : "START53_V27::All"
+    "gt_mc" : "START53_V27::All",
+    "image_gitlab": "gitlab-registry.cern.ch/cms-cloud/cmssw-docker-opendata/cmssw_5_3_32-slc6_amd64_gcc472",
+    "image_dockerhub": "cmsopendata/cmssw_5_3_32-slc6_amd64_gcc472"
   },
  "2015": {
    "year": 2015,
@@ -81,7 +87,9 @@
    ],
    "cmssw" : "CMSSW_7_6_7",
    "gt_data" : "76X_dataRun2_16Dec2015_v0",
-   "gt_mc" : "76X_mcRun2_asymptotic_RunIIFall15DR76_v1"
+   "gt_mc" : "76X_mcRun2_asymptotic_RunIIFall15DR76_v1",
+   "image_gitlab": "gitlab-registry.cern.ch/cms-cloud/cmssw-docker-opendata/cmssw_7_6_7-slc6_amd64_gcc493",
+   "image_dockerhub": "cmsopendata/cmssw_7_6_7-slc6_amd64_gcc493"
  },
  "2016": {
    "year": 2016,
@@ -102,7 +110,9 @@
   ],
    "cmssw" : "CMSSW_10_6_29",
    "gt_data" : "106X_dataRun2_v35",
-   "gt_mc" : ["106X_mcRun2_asymptotic_preVFP_v11", "106X_mcRun2_asymptotic_v17"]
+   "gt_mc" : ["106X_mcRun2_asymptotic_preVFP_v11", "106X_mcRun2_asymptotic_v17"],
+   "image_gitlab": "",
+   "image_dockerhub": ""
  },
  "2017": {
    "year": 2017,
@@ -123,7 +133,9 @@
   ],
   "cmssw" : "CMSSW_10_6_29",
   "gt_data" : "106X_dataRun2_v35",
-  "gt_mc" : "106X_mc2017_realistic_v9"
+  "gt_mc" : "106X_mc2017_realistic_v9",
+  "image_gitlab": "",
+  "image_dockerhub": ""
  },
  "2018": {
    "year": 2018,
@@ -144,6 +156,8 @@
   ],
   "cmssw" : "CMSSW_10_6_29",
   "gt_data" : "106X_dataRun2_v35",
-  "gt_mc" : "106X_upgrade2018_realistic_v16_L1v1"
+  "gt_mc" : "106X_upgrade2018_realistic_v16_L1v1",
+  "image_gitlab": "",
+  "image_dockerhub": ""
  }
 }

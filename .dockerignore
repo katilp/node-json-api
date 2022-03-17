@@ -1,0 +1,4 @@
+node_modules
+manifests
+key.json
+kustomization.yaml

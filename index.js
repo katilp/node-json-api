@@ -33,7 +33,8 @@ function welcome(request,response)
 		usage: "Add a path, available paths: /years and /runeras",
 		years: "use: /years/<YYYY>  to get a specific year or: /years/<YYYY>/<key> for a specific value within a year",
 		runeras: "use: /runeras/<RunYYYYN> to get a specific run era or: /runeras/<RunYYYYN>/<key> for a specific value within a run era",
-		or: "or use: /runeras/<YYYY> to get run eras of a year or: /runeras/<YYYY>/<key> to get specific values for run eras within a year"
+		or: "or use: /runeras/<YYYY> to get run eras of a year or: /runeras/<YYYY>/<key> to get specific values for run eras within a year",
+		queries: "for runeras, pass a query with: /runeras?<akey>=<avalue> or after <YYYY> and <key> paths"
 	}
     response.send(reply);
 }
@@ -70,13 +71,20 @@ function searchEra(request,response)
 {
 	var era=request.params.era;
 	var key=request.params.mykey;
+	var filters=request.query;
+	var filtered_eras = run_eras;
+	
+	for (var reqkey in filters) {
+		filtered_eras = filtered_eras.filter(an_era => an_era[reqkey] == filters[reqkey]);
+	}
+
 	var reply;
 	
 	if (era)
 	{
 		if (era.includes("Run"))
 		{
-			const this_era = run_eras.filter(an_era => an_era.run_era == era);
+			const this_era = filtered_eras.filter(an_era => an_era.run_era == era);
 			reply=this_era[0];
 			if (key)
 			{
@@ -87,7 +95,7 @@ function searchEra(request,response)
 		{
 			console.log("No 'Run' in era, consider it as year");
 			var year = era;
-			const these_eras = run_eras.filter(an_era => an_era.year == year);
+			const these_eras = filtered_eras.filter(an_era => an_era.year == year);
 			reply=these_eras;
 			if (key)
 			{
@@ -99,7 +107,7 @@ function searchEra(request,response)
 	}
 	else
 	{
-		reply=run_eras;
+		reply=filtered_eras;
 	}
 
     console.log(reply);

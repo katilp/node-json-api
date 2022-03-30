@@ -4,7 +4,7 @@ var years=JSON.parse(data);
 var data2=fs.readFileSync('run_ranges.json');
 var run_eras=JSON.parse(data2);
 const express = require("express");
-const url = require('url');
+
 var favicon = require('serve-favicon');
 var path = require('path');
 
@@ -28,48 +28,52 @@ app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 app.get('/',welcome);
 function welcome(request,response)
 {
+	let hostname=request.get('Host')
 	console.log(request.get('Host'));
 	var reply={
-		usage: "Add a path, available paths: /years and /runeras",
-		years: "use: /years/<YYYY>  to get a specific year or: /years/<YYYY>/<key> for a specific value within a year",
-		runeras: "use: /runeras/<RunYYYYN> to get a specific run era or: /runeras/<RunYYYYN>/<key> for a specific value within a run era",
-		or: "or use: /runeras/<YYYY> to get run eras of a year or: /runeras/<YYYY>/<key> to get specific values for run eras within a year",
-		queries: "for runeras, pass a query with: /runeras?<akey>=<avalue> or after <YYYY> and <key> paths"
+		usage: "Add a path, available paths: http://"+hostname+"/years and http://"+hostname+"/runeras",
+		years: "use: /years/ to get all year infor or: /years/<key> for a specific value",
+		runeras: "use: /runeras/ to get all run era info or: /runeras/<key> for a specific value",
+		queries: "Pass a query with: ?<akey>=<avalue>",
+		example: "http://"+hostname+"/runeras/run_era?year=2015"
 	}
     response.send(reply);
 }
 
 
-app.get('/years/:year?/:mykey?',searchYear);
+app.get('/years/:mykey?',searchYear);
 function searchYear(request,response)
 {
-	var year=request.params.year;
 	var key=request.params.mykey;
+	var filters=request.query;
+	var filtered_years = years;
+
+	for (var reqkey in filters) {
+		filtered_years = filtered_years.filter(a_year => a_year[reqkey] == filters[reqkey]);
+	}
+
 	var reply;
 
-	if(years[year])
+	if (key)
 	{
-		if (key)
-		{
-			reply=String(years[year][key]);
-		}
-		else
-		{
-			reply=years[year];
-		}	
+		// note that year.key won't work
+		let keyvalues = filtered_years.map(year => year[key]);
+		reply = keyvalues;
 	}
 	else
 	{
-		reply=years;
+		reply=filtered_years;
 	}
+	
     console.log(reply);
+	if (reply.length == 1) reply = String(reply[0]);
+
 	response.send(reply);
 }
 
-app.get('/runeras/:era?/:mykey?',searchEra);
+app.get('/runeras/:mykey?',searchEra);
 function searchEra(request,response)
 {
-	var era=request.params.era;
 	var key=request.params.mykey;
 	var filters=request.query;
 	var filtered_eras = run_eras;
@@ -80,30 +84,11 @@ function searchEra(request,response)
 
 	var reply;
 	
-	if (era)
+	if (key)
 	{
-		if (era.includes("Run"))
-		{
-			const this_era = filtered_eras.filter(an_era => an_era.run_era == era);
-			reply=this_era[0];
-			if (key)
-			{
-				reply=String(this_era[0][key]);
-			}
-		}
-		else
-		{
-			console.log("No 'Run' in era, consider it as year");
-			var year = era;
-			const these_eras = filtered_eras.filter(an_era => an_era.year == year);
-			reply=these_eras;
-			if (key)
-			{
-				// note that era.key won't work
-				let keyvalues = these_eras.map(era => era[key]);
-				reply = keyvalues;
-			}
-		}
+		// note that era.key won't work
+		let keyvalues = filtered_eras.map(era => era[key]);
+		reply = keyvalues;
 	}
 	else
 	{

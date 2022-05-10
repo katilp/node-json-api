@@ -56,3 +56,10 @@ The server application can be deployed with the workflow in `.github/workflows/m
 
 Opens in the URL indicated in the Google Cloud platform dashboard under "Services".
 
+### Import in Openshift
+
+Import the docker image as image stream:
+
+```
+oc tag ghcr.io/katilp/node-json-api:main cms-info-server:latest --scheduled
+```

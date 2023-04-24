@@ -1,17 +1,41 @@
 [
  {
-   "run_era": "Run2015A",
-   "year": 2015,
-   "run_min": 247607,
-   "run_max": 250932,
+   "run_era": "HIRun2013",
+   "year": 2013,
+   "energy": "5.02TeV",
+   "run_min": 210498,
+   "run_max": 211631,
    "released": "no",
-   "type": "pp-0T",
-   "comments": "data taken at 0T including commissioning runs and low-PU runs for FSQ physics.",
-   "source": "https://twiki.cern.ch/twiki/bin/view/CMS/PdmV2015Analysis"
+   "type": "pPb-phys",
+   "comments": "Reverse beam starting from 211313. HIRun2013 corresponds to the new T0 framework, WMAgent and HIRun2013A corresponds to the old one, ProdAgent. Only HIRun2013 is used. The first seven runs 210498-210658 were reprocessed to fix a tracking alignment issue. Run range is from the twiki, the actual runs in the dataset may be more.",
+   "source": "https://twiki.cern.ch/twiki/bin/view/CMS/PAData2013"
  },
+ {
+   "run_era": "Run2013A",
+   "year": 2013,
+   "energy": "2.76TeV",
+   "run_min": 211739,
+   "run_max": 211831,
+   "released": "no",
+   "type": "pphiref-phys",
+   "comments": "Run range is from the twiki, the actual runs in the dataset may be more.",
+   "source": "https://twiki.cern.ch/twiki/bin/view/CMS/PAData2013"
+ },
+ {
+  "run_era": "Run2015A",
+  "year": 2015,
+  "energy": "13TeV",
+  "run_min": 247607,
+  "run_max": 250932,
+  "released": "no",
+  "type": "pp-0T",
+  "comments": "data taken at 0T including commissioning runs and low-PU runs for FSQ physics.",
+  "source": "https://twiki.cern.ch/twiki/bin/view/CMS/PdmV2015Analysis"
+},
  {
    "run_era": "Run2015B",
    "year": 2015,
+   "energy": "13TeV",
    "run_min": 250985,
    "run_max": 253620,
    "released": "no",
@@ -22,6 +46,7 @@
  {
    "run_era": "Run2015C",
    "year": 2015,
+   "energy": "13TeV",
    "run_min": 253659,
    "run_max": 256464,
    "released": "no",
@@ -32,6 +57,7 @@
  {
    "run_era": "Run2015D",
    "year": 2015,
+   "energy": "13TeV",
    "run_min": 256630,
    "run_max": 260627,
    "released": "yes",
@@ -40,8 +66,31 @@
    "source": "https://twiki.cern.ch/twiki/bin/view/CMS/PdmV2015Analysis"
  },
  {
+  "run_era": "Run2015E",
+  "year": 2015,
+  "energy": "5.02TeV",
+  "run_min": 261445,
+  "run_max": 262328,
+  "released": "no",
+  "type": "pphiref-phys",
+  "comments": "Run range is from the twiki, the actual runs in the dataset may be more.",
+  "source": "https://twiki.cern.ch/twiki/bin/view/CMS/HIData2015#pp_data"
+},
+{
+  "run_era": "HIRun2015",
+  "year": 2015,
+  "energy": "5.02TeV",
+  "run_min": 262341,
+  "run_max": 263757,
+  "released": "no",
+  "type": "PbPb-phys",
+  "comments": "Run range is from the twiki, the actual runs in the dataset may be more.",
+  "source": "https://twiki.cern.ch/twiki/bin/view/CMS/HIData2015"
+}, 
+ {
    "run_era": "Run2016A",
    "year": 2016,
+   "energy": "13TeV",
    "run_min": 271036,
    "run_max": 271658,
    "released": "no",
@@ -52,6 +101,7 @@
  {
    "run_era": "Run2016B",
    "year": 2016,
+   "energy": "13TeV",
    "run_min": 272007,
    "run_max": 275376,
    "released": "no",
@@ -62,6 +112,7 @@
  {
    "run_era": "Run2016C",
    "year": 2016,
+   "energy": "13TeV",
    "run_min": 275657,
    "run_max": 276283,
    "released": "no",
@@ -72,6 +123,7 @@
  {
    "run_era": "Run2016D",
    "year": 2016,
+   "energy": "13TeV",
    "run_min": 276315,
    "run_max": 276811,
    "released": "no",
@@ -82,6 +134,7 @@
  {
    "run_era": "Run2016E",
    "year": 2016,
+   "energy": "13TeV",
    "run_min": 276831,
    "run_max": 277420,
    "released": "no",
@@ -92,6 +145,7 @@
  {
    "run_era": "Run2016F",
    "year": 2016,
+   "energy": "13TeV",
    "run_min": 277772,
    "run_max": 278808,
    "released": "no",
@@ -102,6 +156,7 @@
  {
    "run_era": "Run2016G",
    "year": 2016,
+   "energy": "13TeV",
    "run_min": 278820,
    "run_max": 280385,
    "released": "no",
@@ -112,6 +167,7 @@
  {
    "run_era": "Run2016H",
    "year": 2016,
+   "energy": "13TeV",
    "run_min": 280919,
    "run_max": 284044,
    "released": "no",
@@ -122,6 +178,7 @@
  {
    "run_era": "Run2017A",
    "year": 2017,
+   "energy": "13TeV",
    "run_min": 294927,
    "run_max": 297019,
    "released": "no",
@@ -132,6 +189,7 @@
  {
    "run_era": "Run2017B",
    "year": 2017,
+   "energy": "13TeV",
    "run_min": 297046,
    "run_max": 299329,
    "released": "no",
@@ -142,6 +200,7 @@
  {
    "run_era": "Run2017C",
    "year": 2017,
+   "energy": "13TeV",
    "run_min": 299368,
    "run_max": 302029,
    "released": "no",
@@ -152,6 +211,7 @@
  {
    "run_era": "Run2017D",
    "year": 2017,
+   "energy": "13TeV",
    "run_min": 302030,
    "run_max": 303434,
    "released": "no",
@@ -162,6 +222,7 @@
  {
    "run_era": "Run2017E",
    "year": 2017,
+   "energy": "13TeV",
    "run_min": 303824,
    "run_max": 304797,
    "released": "no",
@@ -172,6 +233,7 @@
  {
    "run_era": "Run2017F",
    "year": 2017,
+   "energy": "13TeV",
    "run_min": 305040,
    "run_max": 306462,
    "released": "no",
@@ -182,6 +244,7 @@
  {
    "run_era": "Run2017G",
    "year": 2017,
+   "energy": "13TeV",
    "run_min": 306472,
    "run_max": 306826,
    "released": "no",
@@ -192,6 +255,7 @@
  {
    "run_era": "Run2017H",
    "year": 2017,
+   "energy": "13TeV",
    "run_min": 306896,
    "run_max": 307082,
    "released": "no",
@@ -202,6 +266,7 @@
  {
    "run_era": "Run2018A",
    "year": 2018,
+   "energy": "13TeV",
    "run_min": 315252,
    "run_max": 316995,
    "released": "no",
@@ -212,6 +277,7 @@
  {
    "run_era": "Run2018B",
    "year": 2018,
+   "energy": "13TeV",
    "run_min": 317080,
    "run_max": 319310,
    "released": "no",
@@ -222,6 +288,7 @@
  {
    "run_era": "Run2018C",
    "year": 2018,
+   "energy": "13TeV",
    "run_min": 319337,
    "run_max": 320065,
    "released": "no",
@@ -232,6 +299,7 @@
  {
    "run_era": "Run2018D",
    "year": 2018,
+   "energy": "13TeV",
    "run_min": 320673,
    "run_max": 325175,
    "released": "no",

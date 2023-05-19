@@ -5,7 +5,7 @@
    "energy": "5.02TeV",
    "run_min": 210498,
    "run_max": 211631,
-   "released": "no",
+   "released": "yes",
    "type": "pPb-phys",
    "comments": "Reverse beam starting from 211313. HIRun2013 corresponds to the new T0 framework, WMAgent and HIRun2013A corresponds to the old one, ProdAgent. Only HIRun2013 is used. The first seven runs 210498-210658 were reprocessed to fix a tracking alignment issue. Run range is from the twiki, the actual runs in the dataset may be more.",
    "source": "https://twiki.cern.ch/twiki/bin/view/CMS/PAData2013"
@@ -16,7 +16,7 @@
    "energy": "2.76TeV",
    "run_min": 211739,
    "run_max": 211831,
-   "released": "no",
+   "released": "yes",
    "type": "pphiref-phys",
    "comments": "Run range is from the twiki, the actual runs in the dataset may be more.",
    "source": "https://twiki.cern.ch/twiki/bin/view/CMS/PAData2013"
@@ -71,7 +71,7 @@
   "energy": "5.02TeV",
   "run_min": 261445,
   "run_max": 262328,
-  "released": "no",
+  "released": "yes",
   "type": "pphiref-phys",
   "comments": "Run range is from the twiki, the actual runs in the dataset may be more.",
   "source": "https://twiki.cern.ch/twiki/bin/view/CMS/HIData2015#pp_data"

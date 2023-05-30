@@ -77,16 +77,16 @@
     "lumi_uncertainty": 3.4,
     "lumi_uncertainty_reverse": 3.6,
     "luminosity_reference": "https://cds.cern.ch/record/1643269",
-    "recid_val": 0,
+    "recid_val": 14216,
     "val_json": [
       {
         "type": "golden",
-        "recid": 0,
+        "recid": 14216,
         "url" : "https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions13/pPb/Prompt/Cert_210498-211631_HI_PromptReco_Collisions13_JSON_v2.txt"
       },
       {
         "type": "muon",
-        "recid": 0,
+        "recid": 14217,
         "url": "https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions13/pPb/Prompt/Cert_210498-211631_HI_PromptReco_Collisions13_JSON_MuonPhys_v2.txt"
       }
     ],
@@ -101,16 +101,16 @@
     "type": "pphiref",
     "lumi_uncertainty": 3.7,
     "luminosity_reference": "https://cds.cern.ch/record/1643269",
-    "recid_val": 0,
+    "recid_val": 14218,
     "val_json": [
       {
         "type": "golden",
-        "recid": 0,
+        "recid": 14218,
         "url" : "https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions13/pp/2760GeV/Prompt/Cert_211739-211831_2760GeV_PromptReco_Collisions13_JSON.txt"
       },
       {
         "type": "muon",
-        "recid": 0,
+        "recid": 14219,
         "url": "https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions13/pp/2760GeV/Prompt/Cert_211739-211831_2760GeV_PromptReco_Collisions13_JSON_MuonPhys.txt"
       }
     ],
@@ -149,16 +149,16 @@
    "type": "pphiref",
    "lumi_uncertainty": 1.9,
    "luminosity_reference": "http://cds.cern.ch/record/2765655",
-   "recid_val": 0,
+   "recid_val": 14212,
    "val_json": [
      {
        "type": "golden",
-       "recid": 0,
+       "recid": 14212,
        "url" : "https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions15/5TeV/Cert_262081-262328_5TeV_PromptReco_Collisions15_25ns_JSON.txt"
      },
      {
        "type": "muon",
-       "recid": 0,
+       "recid": 14213,
        "url": "https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions15/5TeV/Cert_262081-262328_5TeV_PromptReco_Collisions15_25ns_JSON_MuonPhys.txt"
      }
    ],

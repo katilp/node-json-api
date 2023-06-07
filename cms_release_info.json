@@ -147,8 +147,8 @@
  {
    "year": 2015,
    "type": "pphiref",
-   "lumi_uncertainty": 1.9,
-   "luminosity_reference": "http://cds.cern.ch/record/2765655",
+   "lumi_uncertainty": 2.3,
+   "luminosity_reference": "https://cds.cern.ch/record/2235781",
    "recid_val": 14212,
    "val_json": [
      {

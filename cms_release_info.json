@@ -116,7 +116,7 @@
     ],
     "cmssw" : "CMSSW_5_3_20",
     "gt_data" : "GR_P_V43D::All",
-    "gt_mc" : "FIXME",
+    "gt_mc" : "STARTHI53_V28::All",
     "image_gitlab": "gitlab-registry.cern.ch/cms-cloud/cmssw-docker-opendata/cmssw_5_3_20-slc6_amd64_gcc472",
     "image_dockerhub": "cmsopendata/cmssw_5_3_20-slc6_amd64_gcc472"
   },

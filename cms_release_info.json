@@ -187,7 +187,7 @@
     }
   ],
    "cmssw" : "CMSSW_10_6_29",
-   "gt_data" : "106X_dataRun2_v35",
+   "gt_data" : "106X_dataRun2_v37",
    "gt_mc" : ["106X_mcRun2_asymptotic_preVFP_v11", "106X_mcRun2_asymptotic_v17"],
    "image_gitlab": "",
    "image_dockerhub": ""
@@ -211,7 +211,7 @@
     }
   ],
   "cmssw" : "CMSSW_10_6_29",
-  "gt_data" : "106X_dataRun2_v35",
+  "gt_data" : "106X_dataRun2_v37",
   "gt_mc" : "106X_mc2017_realistic_v9",
   "image_gitlab": "",
   "image_dockerhub": ""
@@ -235,7 +235,7 @@
     }
   ],
   "cmssw" : "CMSSW_10_6_29",
-  "gt_data" : "106X_dataRun2_v35",
+  "gt_data" : "106X_dataRun2_v37",
   "gt_mc" : "106X_upgrade2018_realistic_v16_L1v1",
   "image_gitlab": "",
   "image_dockerhub": ""

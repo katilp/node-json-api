@@ -186,7 +186,7 @@
       "url": "https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions16/13TeV/Legacy_2016/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON_MuonPhys.txt"
     }
   ],
-   "cmssw" : "CMSSW_10_6_29",
+   "cmssw" : "CMSSW_10_6_30",
    "gt_data" : "106X_dataRun2_v37",
    "gt_mc" : ["106X_mcRun2_asymptotic_preVFP_v11", "106X_mcRun2_asymptotic_v17"],
    "image_gitlab": "",
@@ -210,9 +210,9 @@
       "url": "https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions17/13TeV/Legacy_2017/Cert_294927-306462_13TeV_UL2017_Collisions17_MuonJSON.txt"
     }
   ],
-  "cmssw" : "CMSSW_10_6_29",
+  "cmssw" : "CMSSW_10_6_30",
   "gt_data" : "106X_dataRun2_v37",
-  "gt_mc" : "106X_mc2017_realistic_v9",
+  "gt_mc" : "106X_mc2017_realistic_v10",
   "image_gitlab": "",
   "image_dockerhub": ""
  },
@@ -234,7 +234,7 @@
       "url": "https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions18/13TeV/Legacy_2018/Cert_314472-325175_13TeV_Legacy2018_Collisions18_JSON_MuonPhys.txt"
     }
   ],
-  "cmssw" : "CMSSW_10_6_29",
+  "cmssw" : "CMSSW_10_6_30",
   "gt_data" : "106X_dataRun2_v37",
   "gt_mc" : "106X_upgrade2018_realistic_v16_L1v1",
   "image_gitlab": "",

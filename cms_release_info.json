@@ -189,8 +189,8 @@
    "cmssw" : "CMSSW_10_6_30",
    "gt_data" : "106X_dataRun2_v37",
    "gt_mc" : ["106X_mcRun2_asymptotic_preVFP_v11", "106X_mcRun2_asymptotic_v17"],
-   "image_gitlab": "",
-   "image_dockerhub": ""
+   "image_gitlab": "gitlab-registry.cern.ch/cms-cloud/cmssw-docker-opendata/cmssw_10_6_30-slc7_amd64_gcc700",
+   "image_dockerhub": "cmsopendata/cmssw_10_6_30-slc7_amd64_gcc700"
  },
  {
    "year": 2017,

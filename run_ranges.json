@@ -159,7 +159,7 @@
    "energy": "13TeV",
    "run_min": 278820,
    "run_max": 280385,
-   "released": "no",
+   "released": "yes",
    "type": "pp-phys",
    "comments": "post-VFP with the default track reconstruction",
    "source": "https://twiki.cern.ch/twiki/bin/view/CMS/PdmVDatasetsUL2016"
@@ -170,7 +170,7 @@
    "energy": "13TeV",
    "run_min": 280919,
    "run_max": 284044,
-   "released": "no",
+   "released": "yes",
    "type": "pp-phys",
    "comments": "post-VFP with the default track reconstruction",
    "source": "https://twiki.cern.ch/twiki/bin/view/CMS/PdmVDatasetsUL2016"

@@ -177,12 +177,12 @@
    "val_json": [
     {
       "type": "golden",
-      "recid": 0,
+      "recid": 14220,
       "url" : "https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions16/13TeV/Legacy_2016/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt"
     },
     {
       "type": "muon",
-      "recid": 0,
+      "recid": 14221,
       "url": "https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions16/13TeV/Legacy_2016/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON_MuonPhys.txt"
     }
   ],

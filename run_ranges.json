@@ -203,7 +203,7 @@
    "energy": "13TeV",
    "run_min": 299368,
    "run_max": 302029,
-   "released": "no",
+   "released": "yes",
    "type": "pp-phys",
    "comments": "Includes low PU runs 299996 300018 300027 300043 300088",
    "source": "https://twiki.cern.ch/twiki/bin/view/CMS/PdmVDataReprocessingUL2017"
@@ -225,7 +225,7 @@
    "energy": "13TeV",
    "run_min": 303824,
    "run_max": 304797,
-   "released": "no",
+   "released": "yes",
    "type": "pp-phys",
    "comments": "",
    "source": "https://twiki.cern.ch/twiki/bin/view/CMS/PdmVDataReprocessingUL2017"
